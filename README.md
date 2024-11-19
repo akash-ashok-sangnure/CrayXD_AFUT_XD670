@@ -136,7 +136,7 @@ The playbook `system_firmware_update.yml` is used to perform the firmware upgrad
 
 3. Run the ansible playbook:
 
-   ```ansible-playbook -i inventory system_firmware_update.yml -e @system_credentials.yml -e @cray-vault --ask-vault-pass```
+   ```ansible-playbook -i inventory system_firmware_update.yml -e @system_credentials.yml --ask-vault-pass```
 
    After the firmware target is upgraded, the server reboots for all required components.
 
